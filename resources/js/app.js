@@ -8,3 +8,7 @@ import Tooltip from '@ryangjchandler/alpine-tooltip'
 Alpine.plugin(Tooltip)
 
 Livewire.start()
+
+document.addEventListener('livewire:navigated', () => {
+  console.log('Livewire navigated')
+})
